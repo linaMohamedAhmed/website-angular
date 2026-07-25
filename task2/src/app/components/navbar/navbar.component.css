@@ -1,0 +1,10 @@
+ul {
+  li {
+    list-style: none;
+    font-weight: 700;
+  }
+}
+
+.navbar-brand {
+  font-weight: bold;
+}

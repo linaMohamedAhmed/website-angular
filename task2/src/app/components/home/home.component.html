@@ -1,0 +1,78 @@
+<!-- ----------------------- home ------------- -->
+
+
+
+<section class="py-5 home">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>Brand New Collection</h1>
+                <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto iure inventore beatae
+                    hic qui sed
+                    deleniti repellendus voluptate quas omnis facilis laudantium recusandae sunt error voluptatibus,
+                    accusamus cupiditate. Nemo labore, dolorum suscipit aperiam voluptatum libero quam quo nulla magnam
+                    nisi.</p>
+
+                <ul class="d-flex justify-content-between mt-5">
+                    <li>
+                        <i class="fa-solid fa-circle-check" style="color: rgb(38, 39, 39);"></i>
+                        <span>Top Brands</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check" style="color: rgb(38, 39, 39);"></i>
+                        <span>High Quality</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check" style="color: rgb(38, 39, 39);"></i>
+                        <span>Free Delivery</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="img-wrapper">
+                    <img src="../../imgs/images.png" alt="clothes photo">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<section class=" py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- ------------------------ cards ------------------ -->
+            @for( product of productList ; track $index){
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+                <div class="card border-3 h-100 " [class]="{
+                    'border-success': product.onSale, }" style="width: 18rem;">
+                    <div class="img-wrapper">
+                        <img [src]="product.imageCover" class="card-img-top" height="300px" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{product.title}} </h5>
+                        <p class="card-text">{{product.description}}</p>
+                        <div class="d-flex justify-content-between my-3">
+                            <span class="fw-semibold">price: {{product.price}}EGP</span>
+                            <span class="fw-semibold">quantity: {{product.quantity}}</span>
+
+                        </div>
+                        <a href="#" class="btn btn-primary">Add to cart </a>
+                    </div>
+                </div>
+
+
+            </div>
+            }
+        </div>
+    </div>
+
+</section>

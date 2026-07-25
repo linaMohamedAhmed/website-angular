@@ -1,0 +1,36 @@
+section.home {
+  background-color: #d9dadc;
+  h1 {
+    font-size: 70px;
+    line-height: 1.2em;
+    color: #131117;
+    font-style: oblique;
+    font-weight: 800;
+  }
+  p {
+    color: #403f43;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+}
+ul {
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+.card {
+  overflow: hidden;
+
+  .img-wrapper {
+    overflow: hidden;
+  }
+  p {
+    min-width: 260px;
+    min-height: 100px;
+  }
+}
+.card:hover img {
+  transform: scale(1.2);
+  transition: all 1s;
+}
